@@ -37,7 +37,7 @@ def split(msg: str, sep: str = ' ', maxsplit: int = -1) -> List[str]:
 def to_outputs(results: List[str]) -> Dict[str, str]:
     outputs = {
         'length': str(len(results)),
-        'arr': results
+        'arr': ','.join(resykts)
     }
     for i, result in enumerate(results):
         outputs[f'_{i}'] = result
