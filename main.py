@@ -37,6 +37,7 @@ def split(msg: str, sep: str = ' ', maxsplit: int = -1) -> List[str]:
 def to_outputs(results: List[str]) -> Dict[str, str]:
     outputs = {
         'length': str(len(results)),
+        'arr': results
     }
     for i, result in enumerate(results):
         outputs[f'_{i}'] = result
@@ -45,7 +46,7 @@ def to_outputs(results: List[str]) -> Dict[str, str]:
 
 def main():
     msg = get_action_input('msg', required=True)
-    seperator = get_action_input('seperator', required=False, default=' ')
+    seperator = get_action_input('separator', required=False, default=' ')
     maxsplit = int(get_action_input('maxsplit', required=False, default='-1'))
 
     results = split(msg, seperator, maxsplit)

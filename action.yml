@@ -7,7 +7,7 @@ inputs:
   msg:
     required: true
     description: String to split
-  seperator:
+  separator:
     required: false
     default: ' '
     description: The delimiter to split the string
@@ -16,6 +16,8 @@ inputs:
     default: '-1'
     description: Maximum number of splits
 outputs:
+  arr:
+    description: array of all the splits
   length:
     description: Length of the splits
   _0:
