@@ -1,4 +1,4 @@
-name: Split Action
+name: Split String to Array
 description: Listify input and set outputs with index
 branding:
   icon: scissors
