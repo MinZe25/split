@@ -222,7 +222,7 @@ outputs:
     description: 100th element
 runs:
   using: docker
-  image: docker://minze25/split:v1
+  image: docker://onrailsog/split:v1
   args:
     - ${{ inputs.msg }}
     - ${{ inputs.seperator }}
